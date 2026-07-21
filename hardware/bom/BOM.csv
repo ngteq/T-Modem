@@ -1,0 +1,38 @@
+Ref,Qty,Description,Preferred_candidate,Notes,Status
+SKT_MODEM,1,16-pin DIP socket 0.3 inch,TE/Mill-Max/generic turned-pin,Hobby: do not solder modem IC directly,Preferred
+HDR_PICO_F,2,Female header 1x20 2.54mm,Commodity,Socket for Pico H,Preferred
+HDR_LCD_F,1,Female header for 16x2 LCD 2.54mm,Commodity,Socket/header LCD,Preferred
+HDR_REG,1,Header for buck module 2.54mm,Commodity,Plug-in 12V-to-5V module,Candidate
+U1,1,MCU module native USB UF2,Raspberry Pi Pico H (headers),Field flash UF2 via USB Type-A path,Preferred
+U_MODEM,1,Bell-202 AFSK modem IC DIP-16,TCM3105 DIP-16 or MX614P-class,Insert in SKT_MODEM; NOT BayCom/SER12; check NOS stock,Preferred_class
+U_MODEM_ALT,0,Alt Bell-202 modem,MX614-class if TCM3105 unavailable,Same net role as U_MODEM,Optional
+Y1,1,Crystal for TCM3105,4.433619 MHz HC-49 TH,Load caps per datasheet,Candidate
+U_REG,1,12V to 5V regulator module,MP1584EN buck module on headers,Prefer module over soldering SOIC buck,Candidate
+D_OR1,1,Schottky OR diode TH,1N5819,PSU to +5V_OR,Candidate
+D_OR2,1,Schottky OR diode TH,1N5819,VBUS to +5V_OR no backfeed,Candidate
+F1,1,PTC ~0.5A hold TH or radial,DigiKey PTC 500mA class,On +5V,Candidate
+C_IN,1,100uF 25V electrolytic radial,Commodity,VIN_12 bulk,Candidate
+C_BULK,1,100uF 16V electrolytic radial,Commodity,+5V_OR bulk,Candidate
+C_BYP,8,100nF 50V ceramic TH or MLCC leaded,Prefer TH for hobby,Decoupling,Candidate
+J_USB,1,USB Type-A receptacle TH USB2 FS,Amphenol/TE/Molex Type-A TH,Operator lock MPN TBD at order,Preferred_class
+J_DC,1,Barrel 5.5x2.1 centre-positive TH,CUI PJ-002A class,Silk 12V CENTRE +,Preferred_class
+J_AF,1,Screw terminal 4-pin 5.08mm TH,Phoenix/Wurth/generic,Silk AF_TX AF_RX PTT GND only,Candidate
+DSP1,1,16x2 HD44780 LCD green backlight,Named OEM DigiKey/Mouser 16x2 green,Pin row into HDR_LCD_F,Preferred_class
+U2,0,Optional PCF8574 I2C backpack,Common backpack often 5V,Frees GPIO,Optional
+U_LVL,0,4-ch bidirectional BSS138 I2C level shifter,Hobby module ~15x13mm pin headers,LV=3.3V Pico HV=5V LCD I2C GND common; not TFT; required if 5V backpack,Preferred_I2C
+RV1,1,10k trimmer TH,Bourns 3296 or carbon TH,TX AF,Candidate
+RV2,1,10k trimmer TH,Same class as RV1,LCD V0,Candidate
+RV_CDL,1,Trimmer TH CD level,Per TCM3105 datasheet,Carrier detect,Candidate
+Q1,1,NPN OC PTT TO-92,2N2222A or BC547,Open collector,Candidate
+R_PTT,1,4.7k resistor 0.25W TH,Commodity,Q1 base,Candidate
+R_LED,4,330R-1k resistor 0.25W TH,Commodity,LED series,Candidate
+R_BL,1,Backlight series R 0.25W TH,Per LCD module,Green BL,Candidate
+R_PAD,4,100R-10k resistors 0.25W TH,Commodity,AF pad/bias,Candidate
+C_AC,2,100nF film or ceramic TH,Commodity,AF AC couple,Candidate
+D_PROT,2,1N4148 TH,Commodity,AF clamp,Candidate
+LED1,1,3mm LED green TH,Commodity,PWR,Candidate
+LED2,1,3mm LED TH,Commodity,PTT,Candidate
+LED3,1,3mm LED TH,Commodity,DCD,Candidate
+LED4,1,3mm LED TH,Commodity,TX/RX,Candidate
+SW1,1,Tactile N.O. 6x6 TH,Omron B3F / TE class,BOOTSEL to GND,Candidate
+PSU_WALL,1,12V centre-positive wall wart 5.5x2.1 >=0.5A,Commodity,Not on PCB,Candidate

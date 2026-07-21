@@ -1,0 +1,1174 @@
+** Drc report for t-modem.kicad_pcb **
+** Created on 2026-07-21T11:25:35 **
+** Report includes: Errors, Warnings **
+
+** Found 293 DRC violations **
+[hole_clearance]: Loch-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zu Löchern Freiraum 0,2500 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zu Löchern; error
+    @(186.0000 mm, 104.0000 mm): Leiterbahn [AF_RX] auf B.Cu, Länge 116.0000 mm
+    @(184.0000 mm, 104.0000 mm): NPTH-Pad von H4
+[hole_clearance]: Loch-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zu Löchern Freiraum 0,2500 mm; tatsächlich 0,2250 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zu Löchern; error
+    @(186.0000 mm, 72.9200 mm): Leiterbahn [AF_RX] auf B.Cu, Länge 31.0800 mm
+    @(184.0000 mm, 104.0000 mm): NPTH-Pad von H4
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(102.5400 mm, 18.0000 mm): Leiterbahn [MODEM_CDT] auf B.Cu, Länge 78.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(138.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 66.0000 mm
+    @(102.5400 mm, 61.4000 mm): Leiterbahn [MODEM_CDT] auf B.Cu, Länge 43.4000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 57.0800 mm): Leiterbahn [MODEM_CDT] auf B.Cu, Länge 2.5400 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(102.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 78.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(102.5400 mm, 58.8600 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 40.8600 mm
+    @(102.5400 mm, 61.4000 mm): Leiterbahn [MODEM_CDT] auf B.Cu, Länge 43.4000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(100.0000 mm, 58.8600 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 2.5400 mm
+    @(102.5400 mm, 61.4000 mm): Leiterbahn [MODEM_CDT] auf B.Cu, Länge 43.4000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(100.0000 mm, 56.3200 mm): Leiterbahn [MODEM_TXD] auf B.Cu, Länge 70.3800 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(48.0000 mm, 22.0000 mm): Leiterbahn [VBUS] auf B.Cu, Länge 120.1600 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(102.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 78.0000 mm
+    @(48.0000 mm, 8.0000 mm): Leiterbahn [VBUS] auf B.Cu, Länge 14.0000 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.1300 mm, 58.4200 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.1300 mm, 59.6900 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.1300 mm, 60.9600 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.1300 mm, 63.5000 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+    @(24.1300 mm, 64.7700 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+    @(24.1300 mm, 66.0400 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(25.4000 mm, 66.0400 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+    @(24.1300 mm, 67.3100 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+    @(24.1300 mm, 62.2300 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(22.8600 mm, 67.3100 mm): Leiterbahn [CDL] auf B.Cu, Länge 1.2700 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(16.0000 mm, 84.0000 mm): Leiterbahn [RXA] auf B.Cu, Länge 59.0000 mm
+[hole_clearance]: Loch-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zu Löchern Freiraum 0,2500 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zu Löchern; error
+    @(5.0800 mm, 102.8700 mm): Leiterbahn [I2C_SCL_3V3] auf B.Cu, Länge 1.2700 mm
+    @(6.0000 mm, 104.0000 mm): NPTH-Pad von H3
+[hole_clearance]: Loch-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zu Löchern Freiraum 0,2500 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zu Löchern; error
+    @(6.3500 mm, 102.8700 mm): Leiterbahn [I2C_SCL_3V3] auf B.Cu, Länge 1.2700 mm
+    @(6.0000 mm, 104.0000 mm): NPTH-Pad von H3
+[hole_clearance]: Loch-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zu Löchern Freiraum 0,2500 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zu Löchern; error
+    @(6.3500 mm, 101.6000 mm): Leiterbahn [I2C_SCL_3V3] auf B.Cu, Länge 1.2700 mm
+    @(6.0000 mm, 104.0000 mm): NPTH-Pad von H3
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(25.4000 mm, 34.2900 mm): Leiterbahn [I2C_SCL_3V3] auf B.Cu, Länge 1.2700 mm
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0600 mm)
+    Local override; error
+    @(24.5400 mm, 18.0000 mm): Leiterbahn [MODEM_RXD] auf B.Cu, Länge 51.7800 mm
+    @(24.1300 mm, 34.2900 mm): Leiterbahn [I2C_SCL_3V3] auf B.Cu, Länge 1.2700 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(72.3900 mm, 34.2900 mm): Leiterbahn [I2C_SCL_3V3] auf B.Cu, Länge 1.2700 mm
+[shorting_items]: Elemente, die zwei Netze kurzschließen (Netze 3V3 und I2C_SCL_3V3)
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(73.6600 mm, 34.2900 mm): Leiterbahn [I2C_SCL_3V3] auf B.Cu, Länge 1.2700 mm
+[hole_clearance]: Loch-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zu Löchern Freiraum 0,2500 mm; tatsächlich 0,2250 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zu Löchern; error
+    @(8.0000 mm, 36.0000 mm): Leiterbahn [I2C_SDA_3V3] auf B.Cu, Länge 68.5400 mm
+    @(6.0000 mm, 104.0000 mm): NPTH-Pad von H3
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1900 mm)
+    Local override; error
+    @(8.0000 mm, 104.5400 mm): Leiterbahn [I2C_SDA_3V3] auf B.Cu, Länge 64.0000 mm
+    @(70.0000 mm, 104.0000 mm): Leiterbahn [AF_RX] auf B.Cu, Länge 16.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(72.0000 mm, 18.0000 mm): Leiterbahn [3V3] auf B.Cu, Länge 84.0000 mm
+    @(100.0000 mm, 36.0000 mm): Leiterbahn [I2C_SDA_3V3] auf B.Cu, Länge 92.0000 mm
+[shorting_items]: Elemente, die zwei Netze kurzschließen (Netze I2C_SDA_3V3 und AF_RX)
+    Local override; error
+    @(72.0000 mm, 104.5400 mm): Via [I2C_SDA_3V3] auf F.Cu - B.Cu
+    @(186.0000 mm, 104.0000 mm): Leiterbahn [AF_RX] auf B.Cu, Länge 116.0000 mm
+[shorting_items]: Elemente, die zwei Netze kurzschließen (Netze PTT_OC und LED_TXRX_N)
+    Local override; error
+    @(182.0000 mm, 67.8400 mm): Durchsteckpad 3 [PTT_OC] von J_AF
+    @(181.6100 mm, 66.0400 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+[shorting_items]: Elemente, die zwei Netze kurzschließen (Netze PTT_OC und LED_TXRX_N)
+    Local override; error
+    @(182.0000 mm, 67.8400 mm): Durchsteckpad 3 [PTT_OC] von J_AF
+    @(182.8800 mm, 66.0400 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1474 mm)
+    Local override; error
+    @(182.0000 mm, 67.8400 mm): Durchsteckpad 3 [PTT_OC] von J_AF
+    @(184.1500 mm, 66.0400 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0437 mm)
+    Local override; error
+    @(182.8800 mm, 80.0100 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+    @(182.0000 mm, 78.0000 mm): Durchsteckpad 1 [AF_TX] von J_AF
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0350 mm)
+    Local override; error
+    @(182.0000 mm, 78.0000 mm): Durchsteckpad 1 [AF_TX] von J_AF
+    @(181.6100 mm, 80.0100 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0350 mm)
+    Local override; error
+    @(180.3400 mm, 80.0100 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+    @(182.0000 mm, 78.0000 mm): Durchsteckpad 1 [AF_TX] von J_AF
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1050 mm)
+    Local override; error
+    @(36.0000 mm, 40.0000 mm): Leiterbahn [LED_PTT_N] auf B.Cu, Länge 124.0000 mm
+    @(100.0000 mm, 41.0800 mm): Durchsteckpad 3 [GND] von U1
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(100.0000 mm, 56.3200 mm): Leiterbahn [MODEM_TXD] auf B.Cu, Länge 70.3800 mm
+    @(36.0000 mm, 69.0200 mm): Leiterbahn [LED_PTT_N] auf B.Cu, Länge 29.0200 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0450 mm)
+    Local override; error
+    @(38.1600 mm, 68.0000 mm): Durchsteckpad 2 [+5V_OR] von R_TXR2
+    @(100.0000 mm, 69.0200 mm): Leiterbahn [LED_PTT_N] auf B.Cu, Länge 64.0000 mm
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0250 mm)
+    Local override; error
+    @(54.0000 mm, 63.9400 mm): Leiterbahn [PTT_DRV] auf F.Cu, Länge 45.9400 mm
+    @(53.0000 mm, 34.0000 mm): Durchsteckpad 2 [GND] von C_Y2
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1894 mm)
+    Local override; error
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+    @(28.0000 mm, 68.0000 mm): Durchsteckpad 1 [TXR2_N] von R_TXR2
+[clearance]: Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,1894 mm)
+    Local override; error
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+    @(28.0000 mm, 68.0000 mm): Durchsteckpad 1 [TXR2_N] von R_TXR2
+[courtyards_overlap]: Courtyards overlap
+    Rule: Einschränkungen aus Platinenkonfiguration zur Abstandsfläche; error
+    @(182.0000 mm, 78.0000 mm): Footprint J_AF
+    @(178.0000 mm, 64.0000 mm): Footprint LED_TXRX
+[courtyards_overlap]: Courtyards overlap
+    Rule: Einschränkungen aus Platinenkonfiguration zur Abstandsfläche; error
+    @(22.0000 mm, 52.0000 mm): Footprint SKT_MODEM
+    @(28.0000 mm, 68.0000 mm): Footprint R_TXR2
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(28.0000 mm, 68.0000 mm): Durchsteckpad 1 [TXR2_N] von R_TXR2
+    @(22.0000 mm, 52.0000 mm): Footprint SKT_MODEM
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(29.6200 mm, 69.7800 mm): Durchsteckpad 9 [GND] von SKT_MODEM
+    @(28.0000 mm, 68.0000 mm): Footprint R_TXR2
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+    @(28.0000 mm, 68.0000 mm): Footprint R_TXR2
+[copper_edge_clearance]: Platinenkanten-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tatsächlich 0,2050 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Rand; error
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(85.0000 mm, 107.0800 mm): Leiterbahn [I2C_SCL_5V] auf F.Cu, Länge 2.5400 mm
+[copper_edge_clearance]: Platinenkanten-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tatsächlich 0,2050 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Rand; error
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(85.0000 mm, 109.6200 mm): Leiterbahn [I2C_SCL_5V] auf F.Cu, Länge 15.0000 mm
+[copper_edge_clearance]: Platinenkanten-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Rand; error
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(72.0000 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[copper_edge_clearance]: Platinenkanten-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Rand; error
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(74.5400 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[copper_edge_clearance]: Platinenkanten-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Rand; error
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(72.0000 mm, 109.6200 mm): Durchsteckpad 7 [GND] von U_LVL
+[copper_edge_clearance]: Platinenkanten-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Rand; error
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(74.5400 mm, 109.6200 mm): Durchsteckpad 8 [GND] von U_LVL
+[copper_edge_clearance]: Platinenkanten-Freiraum-Verstoß (Einschränkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Rand; error
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(100.0000 mm, 109.6200 mm): Durchsteckpad 4 [I2C_SCL_5V] von J_LCD_I2C
+[solder_mask_bridge]: Rückseitige Lötstoppöffnung über Elementen mit verschiedenen Netzen
+    Rule: Mindestbreite der Lötstoppmaske aus Platinenkonfiguration; error
+    @(186.0000 mm, 104.0000 mm): Leiterbahn [AF_RX] auf B.Cu, Länge 116.0000 mm
+    @(100.0000 mm, 104.5400 mm): Durchsteckpad 2 [+5V_OR] von J_LCD_I2C
+[solder_mask_bridge]: Rückseitige Lötstoppöffnung über Elementen mit verschiedenen Netzen
+    Rule: Mindestbreite der Lötstoppmaske aus Platinenkonfiguration; error
+    @(186.0000 mm, 104.0000 mm): Leiterbahn [AF_RX] auf B.Cu, Länge 116.0000 mm
+    @(72.0000 mm, 104.5400 mm): Durchsteckpad 3 [I2C_SDA_3V3] von U_LVL
+[solder_mask_bridge]: Rückseitige Lötstoppöffnung über Elementen mit verschiedenen Netzen
+    Rule: Mindestbreite der Lötstoppmaske aus Platinenkonfiguration; error
+    @(186.0000 mm, 104.0000 mm): Leiterbahn [AF_RX] auf B.Cu, Länge 116.0000 mm
+    @(74.5400 mm, 104.5400 mm): Durchsteckpad 4 [I2C_SDA_5V] von U_LVL
+[solder_mask_bridge]: Vorderseitige Lötstoppöffnung über Elementen mit verschiedenen Netzen
+    Rule: Mindestbreite der Lötstoppmaske aus Platinenkonfiguration; error
+    @(182.8800 mm, 66.0400 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+    @(182.0000 mm, 67.8400 mm): Durchsteckpad 3 [PTT_OC] von J_AF
+[solder_mask_bridge]: Vorderseitige Lötstoppöffnung über Elementen mit verschiedenen Netzen
+    Rule: Mindestbreite der Lötstoppmaske aus Platinenkonfiguration; error
+    @(181.6100 mm, 66.0400 mm): Leiterbahn [LED_TXRX_N] auf F.Cu, Länge 1.2700 mm
+    @(182.0000 mm, 67.8400 mm): Durchsteckpad 3 [PTT_OC] von J_AF
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(100.0000 mm, 41.0800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(100.0000 mm, 53.7800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(100.0000 mm, 66.4800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(100.0000 mm, 79.1800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(117.7800 mm, 79.1800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(117.7800 mm, 66.4800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(117.7800 mm, 53.7800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(117.7800 mm, 41.0800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(29.6200 mm, 69.7800 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(15.0000 mm, 8.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(25.0700 mm, 5.2900 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(11.9300 mm, 5.2900 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(48.0000 mm, 29.6200 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(74.0000 mm, 6.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(69.3000 mm, 9.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(140.0000 mm, 16.5400 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(129.5000 mm, 12.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(185.5000 mm, 14.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(27.0000 mm, 76.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(87.0000 mm, 30.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(37.0000 mm, 34.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(53.0000 mm, 34.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(52.1600 mm, 62.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(52.1600 mm, 54.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(182.0000 mm, 62.7600 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(52.9200 mm, 80.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(52.9200 mm, 94.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(178.0000 mm, 28.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(178.0000 mm, 40.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(178.0000 mm, 52.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(178.0000 mm, 64.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(98.0000 mm, 12.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(72.0000 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(74.5400 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(100.0000 mm, 102.0000 mm): Via [GND] auf F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(122.9200 mm, 100.0000 mm): Via [GND] auf F.Cu - B.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(25.1600 mm, -4.5800 mm): Abschnitt von J_USB auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(11.8400 mm, 3.5300 mm): Abschnitt von J_USB auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(78.6000 mm, -1.8000 mm): Abschnitt von J_DC auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(69.4000 mm, 7.0000 mm): Abschnitt von J_DC auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(179.8900 mm, 81.6500 mm): Rechteck von J_AF auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(188.8100 mm, 81.6500 mm): Rechteck von J_AF auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(70.6200 mm, 103.2700 mm): Abschnitt von U_LVL auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(75.9200 mm, 100.6200 mm): Abschnitt von U_LVL auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(98.6200 mm, 103.2700 mm): Abschnitt von J_LCD_I2C auf F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(0.0000 mm, 0.0000 mm): Rechteck auf Edge.Cuts
+    @(101.3800 mm, 103.2700 mm): Abschnitt von J_LCD_I2C auf F.Silkscreen
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 69.0200 mm): Via [LED_PTT_N] auf F.Cu - B.Cu
+    @(100.0000 mm, 69.0200 mm): Durchsteckpad 14 [LED_PTT_N] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(160.0000 mm, 40.0000 mm): Via [LED_PTT_N] auf F.Cu - B.Cu
+    @(160.0000 mm, 40.0000 mm): Durchsteckpad 1 [LED_PTT_N] von R_LED2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 71.5600 mm): Via [LED_DCD_N] auf F.Cu - B.Cu
+    @(100.0000 mm, 71.5600 mm): Durchsteckpad 15 [LED_DCD_N] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(160.0000 mm, 52.0000 mm): Durchsteckpad 1 [LED_DCD_N] von R_LED3
+    @(160.0000 mm, 52.0000 mm): Via [LED_DCD_N] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 36.0000 mm): Durchsteckpad 1 [I2C_SDA_3V3] von U1
+    @(100.0000 mm, 36.0000 mm): Via [I2C_SDA_3V3] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 104.5400 mm): Via [I2C_SDA_3V3] auf F.Cu - B.Cu
+    @(72.0000 mm, 104.5400 mm): Durchsteckpad 3 [I2C_SDA_3V3] von U_LVL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 38.5400 mm): Via [I2C_SCL_3V3] auf F.Cu - B.Cu
+    @(100.0000 mm, 38.5400 mm): Durchsteckpad 2 [I2C_SCL_3V3] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 107.0800 mm): Durchsteckpad 5 [I2C_SCL_3V3] von U_LVL
+    @(72.0000 mm, 107.0800 mm): Via [I2C_SCL_3V3] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 59.6200 mm): Durchsteckpad 4 [RXA] von SKT_MODEM
+    @(22.0000 mm, 59.6200 mm): Via [RXA] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(75.0000 mm, 88.0000 mm): Durchsteckpad 2 [RXA] von C_RX
+    @(75.0000 mm, 88.0000 mm): Via [RXA] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 64.7000 mm): Via [TXA] auf F.Cu - B.Cu
+    @(29.6200 mm, 64.7000 mm): Durchsteckpad 11 [TXA] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(58.0000 mm, 80.0000 mm): Durchsteckpad 1 [TXA] von RV1
+    @(58.0000 mm, 80.0000 mm): Via [TXA] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+    @(22.0000 mm, 67.2400 mm): Durchsteckpad 7 [CDL] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+    @(29.6200 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+    @(29.6200 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(55.4600 mm, 94.0000 mm): Via [CDL] auf F.Cu - B.Cu
+    @(55.4600 mm, 94.0000 mm): Durchsteckpad 2 [CDL] von RV_CDL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 8.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+    @(22.0000 mm, 8.0000 mm): Durchsteckpad 1 [VBUS] von J_USB
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(48.0000 mm, 22.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+    @(48.0000 mm, 22.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(48.0000 mm, 22.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+    @(48.0000 mm, 22.0000 mm): Durchsteckpad 1 [VBUS] von J_USB_PICO
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(48.0000 mm, 22.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+    @(48.0000 mm, 22.0000 mm): Durchsteckpad 1 [VBUS] von J_USB_PICO
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(168.1600 mm, 24.0000 mm): Durchsteckpad 2 [VBUS] von D_OR2
+    @(168.1600 mm, 24.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 56.3200 mm): Durchsteckpad 9 [MODEM_TXD] von U1
+    @(100.0000 mm, 56.3200 mm): Via [MODEM_TXD] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 57.0800 mm): Via [MODEM_TXD] auf F.Cu - B.Cu
+    @(29.6200 mm, 57.0800 mm): Durchsteckpad 14 [MODEM_TXD] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 58.8600 mm): Durchsteckpad 10 [MODEM_RXD] von U1
+    @(100.0000 mm, 58.8600 mm): Via [MODEM_RXD] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 69.7800 mm): Durchsteckpad 8 [MODEM_RXD] von SKT_MODEM
+    @(22.0000 mm, 69.7800 mm): Via [MODEM_RXD] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 61.4000 mm): Via [MODEM_CDT] auf F.Cu - B.Cu
+    @(100.0000 mm, 61.4000 mm): Durchsteckpad 11 [MODEM_CDT] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 57.0800 mm): Via [MODEM_CDT] auf F.Cu - B.Cu
+    @(22.0000 mm, 57.0800 mm): Durchsteckpad 3 [MODEM_CDT] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 46.1600 mm): Durchsteckpad 36 [3V3] von U1
+    @(117.7800 mm, 46.1600 mm): Via [3V3] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 102.0000 mm): Via [3V3] auf F.Cu - B.Cu
+    @(72.0000 mm, 102.0000 mm): Durchsteckpad 1 [3V3] von U_LVL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.0000 mm, 72.9200 mm): Via [AF_RX] auf F.Cu - B.Cu
+    @(182.0000 mm, 72.9200 mm): Durchsteckpad 2 [AF_RX] von J_AF
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(70.0000 mm, 88.0000 mm): Via [AF_RX] auf F.Cu - B.Cu
+    @(70.0000 mm, 88.0000 mm): Durchsteckpad 1 [AF_RX] von C_RX
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 41.0800 mm): Via [GND] auf F.Cu - B.Cu
+    @(100.0000 mm, 41.0800 mm): Durchsteckpad 3 [GND] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 53.7800 mm): Durchsteckpad 8 [GND] von U1
+    @(100.0000 mm, 53.7800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 66.4800 mm): Durchsteckpad 13 [GND] von U1
+    @(100.0000 mm, 66.4800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 79.1800 mm): Via [GND] auf F.Cu - B.Cu
+    @(100.0000 mm, 79.1800 mm): Durchsteckpad 18 [GND] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 79.1800 mm): Durchsteckpad 23 [GND] von U1
+    @(117.7800 mm, 79.1800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 66.4800 mm): Durchsteckpad 28 [GND] von U1
+    @(117.7800 mm, 66.4800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 53.7800 mm): Durchsteckpad 33 [GND] von U1
+    @(117.7800 mm, 53.7800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 41.0800 mm): Via [GND] auf F.Cu - B.Cu
+    @(117.7800 mm, 41.0800 mm): Durchsteckpad 38 [GND] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 69.7800 mm): Durchsteckpad 9 [GND] von SKT_MODEM
+    @(29.6200 mm, 69.7800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(15.0000 mm, 8.0000 mm): Durchsteckpad 4 [GND] von J_USB
+    @(15.0000 mm, 8.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(25.0700 mm, 5.2900 mm): Durchsteckpad SH [GND] von J_USB
+    @(25.0700 mm, 5.2900 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(11.9300 mm, 5.2900 mm): Durchsteckpad SH [GND] von J_USB
+    @(11.9300 mm, 5.2900 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(48.0000 mm, 29.6200 mm): Via [GND] auf F.Cu - B.Cu
+    @(48.0000 mm, 29.6200 mm): Durchsteckpad 4 [GND] von J_USB_PICO
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(140.0000 mm, 16.5400 mm): Via [GND] auf F.Cu - B.Cu
+    @(140.0000 mm, 16.5400 mm): Durchsteckpad 2 [GND] von U_REG
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(129.5000 mm, 12.0000 mm): Durchsteckpad 2 [GND] von C_IN
+    @(129.5000 mm, 12.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.5000 mm, 14.0000 mm): Durchsteckpad 2 [GND] von C_BULK
+    @(185.5000 mm, 14.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(27.0000 mm, 76.0000 mm): Durchsteckpad 2 [GND] von C_BYP1
+    @(27.0000 mm, 76.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(87.0000 mm, 30.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(87.0000 mm, 30.0000 mm): Durchsteckpad 2 [GND] von C_BYP2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(37.0000 mm, 34.0000 mm): Durchsteckpad 2 [GND] von C_Y1
+    @(37.0000 mm, 34.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(53.0000 mm, 34.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(53.0000 mm, 34.0000 mm): Durchsteckpad 2 [GND] von C_Y2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.1600 mm, 62.0000 mm): Durchsteckpad 2 [GND] von R_TXR1
+    @(52.1600 mm, 62.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.1600 mm, 54.0000 mm): Durchsteckpad 2 [GND] von R_TRS
+    @(52.1600 mm, 54.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.0000 mm, 62.7600 mm): Via [GND] auf F.Cu - B.Cu
+    @(182.0000 mm, 62.7600 mm): Durchsteckpad 4 [GND] von J_AF
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.9200 mm, 80.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(52.9200 mm, 80.0000 mm): Durchsteckpad 3 [GND] von RV1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.9200 mm, 94.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(52.9200 mm, 94.0000 mm): Durchsteckpad 3 [GND] von RV_CDL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(148.0000 mm, 58.0000 mm): Durchsteckpad 1 [GND] von Q1
+    @(148.0000 mm, 58.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 28.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(178.0000 mm, 28.0000 mm): Durchsteckpad 1 [GND] von LED_PWR
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 40.0000 mm): Durchsteckpad 1 [GND] von LED_PTT
+    @(178.0000 mm, 40.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 52.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(178.0000 mm, 52.0000 mm): Durchsteckpad 1 [GND] von LED_DCD
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 64.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(178.0000 mm, 64.0000 mm): Durchsteckpad 1 [GND] von LED_TXRX
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(98.0000 mm, 12.0000 mm): Durchsteckpad 1 [GND] von SW1
+    @(98.0000 mm, 12.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 109.6200 mm): Durchsteckpad 7 [GND] von U_LVL
+    @(72.0000 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(74.5400 mm, 109.6200 mm): Durchsteckpad 8 [GND] von U_LVL
+    @(74.5400 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 102.0000 mm): Durchsteckpad 1 [GND] von J_LCD_I2C
+    @(100.0000 mm, 102.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(122.9200 mm, 100.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(122.9200 mm, 100.0000 mm): Durchsteckpad 3 [GND] von RV2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 8.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+    @(22.0000 mm, 8.0000 mm): Durchsteckpad 1 [VBUS] von J_USB
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(15.0000 mm, 8.0000 mm): Durchsteckpad 4 [GND] von J_USB
+    @(15.0000 mm, 8.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(25.0700 mm, 5.2900 mm): Durchsteckpad SH [GND] von J_USB
+    @(25.0700 mm, 5.2900 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(11.9300 mm, 5.2900 mm): Durchsteckpad SH [GND] von J_USB
+    @(11.9300 mm, 5.2900 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(48.0000 mm, 22.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+    @(48.0000 mm, 22.0000 mm): Durchsteckpad 1 [VBUS] von J_USB_PICO
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(48.0000 mm, 22.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+    @(48.0000 mm, 22.0000 mm): Durchsteckpad 1 [VBUS] von J_USB_PICO
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(48.0000 mm, 29.6200 mm): Via [GND] auf F.Cu - B.Cu
+    @(48.0000 mm, 29.6200 mm): Durchsteckpad 4 [GND] von J_USB_PICO
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(98.0000 mm, 12.0000 mm): Durchsteckpad 1 [GND] von SW1
+    @(98.0000 mm, 12.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(129.5000 mm, 12.0000 mm): Durchsteckpad 2 [GND] von C_IN
+    @(129.5000 mm, 12.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(140.0000 mm, 16.5400 mm): Via [GND] auf F.Cu - B.Cu
+    @(140.0000 mm, 16.5400 mm): Durchsteckpad 2 [GND] von U_REG
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(168.1600 mm, 24.0000 mm): Durchsteckpad 2 [VBUS] von D_OR2
+    @(168.1600 mm, 24.0000 mm): Via [VBUS] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(185.5000 mm, 14.0000 mm): Durchsteckpad 2 [GND] von C_BULK
+    @(185.5000 mm, 14.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 36.0000 mm): Durchsteckpad 1 [I2C_SDA_3V3] von U1
+    @(100.0000 mm, 36.0000 mm): Via [I2C_SDA_3V3] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 38.5400 mm): Via [I2C_SCL_3V3] auf F.Cu - B.Cu
+    @(100.0000 mm, 38.5400 mm): Durchsteckpad 2 [I2C_SCL_3V3] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 41.0800 mm): Via [GND] auf F.Cu - B.Cu
+    @(100.0000 mm, 41.0800 mm): Durchsteckpad 3 [GND] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 53.7800 mm): Durchsteckpad 8 [GND] von U1
+    @(100.0000 mm, 53.7800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 56.3200 mm): Durchsteckpad 9 [MODEM_TXD] von U1
+    @(100.0000 mm, 56.3200 mm): Via [MODEM_TXD] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 58.8600 mm): Durchsteckpad 10 [MODEM_RXD] von U1
+    @(100.0000 mm, 58.8600 mm): Via [MODEM_RXD] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 61.4000 mm): Via [MODEM_CDT] auf F.Cu - B.Cu
+    @(100.0000 mm, 61.4000 mm): Durchsteckpad 11 [MODEM_CDT] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 66.4800 mm): Durchsteckpad 13 [GND] von U1
+    @(100.0000 mm, 66.4800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 69.0200 mm): Via [LED_PTT_N] auf F.Cu - B.Cu
+    @(100.0000 mm, 69.0200 mm): Durchsteckpad 14 [LED_PTT_N] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 71.5600 mm): Via [LED_DCD_N] auf F.Cu - B.Cu
+    @(100.0000 mm, 71.5600 mm): Durchsteckpad 15 [LED_DCD_N] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 79.1800 mm): Via [GND] auf F.Cu - B.Cu
+    @(100.0000 mm, 79.1800 mm): Durchsteckpad 18 [GND] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 79.1800 mm): Durchsteckpad 23 [GND] von U1
+    @(117.7800 mm, 79.1800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 66.4800 mm): Durchsteckpad 28 [GND] von U1
+    @(117.7800 mm, 66.4800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 53.7800 mm): Durchsteckpad 33 [GND] von U1
+    @(117.7800 mm, 53.7800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 46.1600 mm): Durchsteckpad 36 [3V3] von U1
+    @(117.7800 mm, 46.1600 mm): Via [3V3] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(117.7800 mm, 41.0800 mm): Via [GND] auf F.Cu - B.Cu
+    @(117.7800 mm, 41.0800 mm): Durchsteckpad 38 [GND] von U1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(87.0000 mm, 30.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(87.0000 mm, 30.0000 mm): Durchsteckpad 2 [GND] von C_BYP2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 57.0800 mm): Via [MODEM_CDT] auf F.Cu - B.Cu
+    @(22.0000 mm, 57.0800 mm): Durchsteckpad 3 [MODEM_CDT] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 59.6200 mm): Durchsteckpad 4 [RXA] von SKT_MODEM
+    @(22.0000 mm, 59.6200 mm): Via [RXA] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+    @(22.0000 mm, 67.2400 mm): Durchsteckpad 7 [CDL] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(22.0000 mm, 69.7800 mm): Durchsteckpad 8 [MODEM_RXD] von SKT_MODEM
+    @(22.0000 mm, 69.7800 mm): Via [MODEM_RXD] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 69.7800 mm): Durchsteckpad 9 [GND] von SKT_MODEM
+    @(29.6200 mm, 69.7800 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+    @(29.6200 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 67.2400 mm): Via [CDL] auf F.Cu - B.Cu
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 64.7000 mm): Via [TXA] auf F.Cu - B.Cu
+    @(29.6200 mm, 64.7000 mm): Durchsteckpad 11 [TXA] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(29.6200 mm, 57.0800 mm): Via [MODEM_TXD] auf F.Cu - B.Cu
+    @(29.6200 mm, 57.0800 mm): Durchsteckpad 14 [MODEM_TXD] von SKT_MODEM
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(37.0000 mm, 34.0000 mm): Durchsteckpad 2 [GND] von C_Y1
+    @(37.0000 mm, 34.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(53.0000 mm, 34.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(53.0000 mm, 34.0000 mm): Durchsteckpad 2 [GND] von C_Y2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(27.0000 mm, 76.0000 mm): Durchsteckpad 2 [GND] von C_BYP1
+    @(27.0000 mm, 76.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.1600 mm, 54.0000 mm): Durchsteckpad 2 [GND] von R_TRS
+    @(52.1600 mm, 54.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.1600 mm, 62.0000 mm): Durchsteckpad 2 [GND] von R_TXR1
+    @(52.1600 mm, 62.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(70.0000 mm, 88.0000 mm): Via [AF_RX] auf F.Cu - B.Cu
+    @(70.0000 mm, 88.0000 mm): Durchsteckpad 1 [AF_RX] von C_RX
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(75.0000 mm, 88.0000 mm): Durchsteckpad 2 [RXA] von C_RX
+    @(75.0000 mm, 88.0000 mm): Via [RXA] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(58.0000 mm, 80.0000 mm): Durchsteckpad 1 [TXA] von RV1
+    @(58.0000 mm, 80.0000 mm): Via [TXA] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.9200 mm, 80.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(52.9200 mm, 80.0000 mm): Durchsteckpad 3 [GND] von RV1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(55.4600 mm, 94.0000 mm): Via [CDL] auf F.Cu - B.Cu
+    @(55.4600 mm, 94.0000 mm): Durchsteckpad 2 [CDL] von RV_CDL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.9200 mm, 94.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(52.9200 mm, 94.0000 mm): Durchsteckpad 3 [GND] von RV_CDL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.0000 mm, 72.9200 mm): Via [AF_RX] auf F.Cu - B.Cu
+    @(182.0000 mm, 72.9200 mm): Durchsteckpad 2 [AF_RX] von J_AF
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(182.0000 mm, 62.7600 mm): Via [GND] auf F.Cu - B.Cu
+    @(182.0000 mm, 62.7600 mm): Durchsteckpad 4 [GND] von J_AF
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(148.0000 mm, 58.0000 mm): Durchsteckpad 1 [GND] von Q1
+    @(148.0000 mm, 58.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 28.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(178.0000 mm, 28.0000 mm): Durchsteckpad 1 [GND] von LED_PWR
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 40.0000 mm): Durchsteckpad 1 [GND] von LED_PTT
+    @(178.0000 mm, 40.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 52.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(178.0000 mm, 52.0000 mm): Durchsteckpad 1 [GND] von LED_DCD
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(178.0000 mm, 64.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(178.0000 mm, 64.0000 mm): Durchsteckpad 1 [GND] von LED_TXRX
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(160.0000 mm, 40.0000 mm): Via [LED_PTT_N] auf F.Cu - B.Cu
+    @(160.0000 mm, 40.0000 mm): Durchsteckpad 1 [LED_PTT_N] von R_LED2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(160.0000 mm, 52.0000 mm): Durchsteckpad 1 [LED_DCD_N] von R_LED3
+    @(160.0000 mm, 52.0000 mm): Via [LED_DCD_N] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 102.0000 mm): Via [3V3] auf F.Cu - B.Cu
+    @(72.0000 mm, 102.0000 mm): Durchsteckpad 1 [3V3] von U_LVL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 104.5400 mm): Via [I2C_SDA_3V3] auf F.Cu - B.Cu
+    @(72.0000 mm, 104.5400 mm): Durchsteckpad 3 [I2C_SDA_3V3] von U_LVL
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 107.0800 mm): Durchsteckpad 5 [I2C_SCL_3V3] von U_LVL
+    @(72.0000 mm, 107.0800 mm): Via [I2C_SCL_3V3] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(72.0000 mm, 109.6200 mm): Durchsteckpad 7 [GND] von U_LVL
+    @(72.0000 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(74.5400 mm, 109.6200 mm): Durchsteckpad 8 [GND] von U_LVL
+    @(74.5400 mm, 109.6200 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(100.0000 mm, 102.0000 mm): Durchsteckpad 1 [GND] von J_LCD_I2C
+    @(100.0000 mm, 102.0000 mm): Via [GND] auf F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(122.9200 mm, 100.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(122.9200 mm, 100.0000 mm): Durchsteckpad 3 [GND] von RV2
+[text_height]: Schrifthöhe außerhalb des zulässigen Bereichs (Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe min. Breite 0,8000 mm; tatsächlich 0,7000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe; warning
+    @(42.0000 mm, 50.0000 mm): Platinen-Text "TRS->GND" auf F.Silkscreen
+[text_height]: Schrifthöhe außerhalb des zulässigen Bereichs (Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe min. Breite 0,8000 mm; tatsächlich 0,7000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe; warning
+    @(42.0000 mm, 58.0000 mm): Platinen-Text "TXR1->GND 0R" auf F.Silkscreen
+[text_height]: Schrifthöhe außerhalb des zulässigen Bereichs (Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe min. Breite 0,8000 mm; tatsächlich 0,7000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe; warning
+    @(28.0000 mm, 72.0000 mm): Platinen-Text "TXR2->+5V_OR 0R" auf F.Silkscreen
+[text_height]: Schrifthöhe außerhalb des zulässigen Bereichs (Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe min. Breite 0,8000 mm; tatsächlich 0,7000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zur Bestückungsdruckhöhe; warning
+    @(128.0000 mm, 96.0000 mm): Platinen-Text "LCD_VO=RV2 wiper only (NC intentional)" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+    @(98.8900 mm, 35.1300 mm): Kreisbogen von U1 auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+    @(98.8900 mm, 34.5200 mm): Abschnitt von U1 auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(128.0000 mm, 96.0000 mm): Platinen-Text "LCD_VO=RV2 wiper only (NC intentional)" auf F.Silkscreen
+    @(125.4600 mm, 96.3400 mm): Referenzfeld von RV2
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(49.3800 mm, 23.2700 mm): Abschnitt von J_USB_PICO auf F.Silkscreen
+    @(48.0000 mm, 28.0000 mm): Platinen-Text "to Pico Micro-USB cable" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(50.5000 mm, 31.5000 mm): Referenzfeld von C_Y2
+    @(46.6200 mm, 31.0000 mm): Abschnitt von J_USB_PICO auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(50.5000 mm, 31.5000 mm): Referenzfeld von C_Y2
+    @(49.3800 mm, 23.2700 mm): Abschnitt von J_USB_PICO auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(69.4000 mm, 7.0000 mm): Abschnitt von J_DC auf F.Silkscreen
+    @(68.2500 mm, 3.5500 mm): Referenzfeld von J_DC
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(46.6200 mm, 23.2700 mm): Abschnitt von J_USB_PICO auf F.Silkscreen
+    @(48.0000 mm, 28.0000 mm): Platinen-Text "to Pico Micro-USB cable" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(33.0800 mm, 65.6300 mm): Referenzfeld von R_TXR2
+    @(20.6700 mm, 50.6100 mm): Rechteck von SKT_MODEM auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(29.8100 mm, 66.6300 mm): Rechteck von R_TXR2 auf F.Silkscreen
+    @(20.6700 mm, 50.6100 mm): Rechteck von SKT_MODEM auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(50.5850 mm, 96.5300 mm): Abschnitt von RV_CDL auf F.Silkscreen
+    @(60.0000 mm, 96.0000 mm): Platinen-Text "U_LVL BSS138 LV=3V3 HV=+5V_OR" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(60.3350 mm, 96.5300 mm): Abschnitt von RV_CDL auf F.Silkscreen
+    @(60.0000 mm, 96.0000 mm): Platinen-Text "U_LVL BSS138 LV=3V3 HV=+5V_OR" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(60.3350 mm, 91.4800 mm): Abschnitt von RV_CDL auf F.Silkscreen
+    @(60.0000 mm, 96.0000 mm): Platinen-Text "U_LVL BSS138 LV=3V3 HV=+5V_OR" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(78.6000 mm, -1.8000 mm): Abschnitt von J_DC auf F.Silkscreen
+    @(95.0000 mm, 2.5000 mm): Platinen-Text "T-Modem v0.25 GPLv3 AS-IS" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(178.8000 mm, 70.3800 mm): Referenzfeld von J_AF
+    @(179.8900 mm, 81.6500 mm): Rechteck von J_AF auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(182.0000 mm, 82.0000 mm): Platinen-Text "AF_RX" auf F.Silkscreen
+    @(179.8900 mm, 81.6500 mm): Rechteck von J_AF auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(178.0000 mm, 62.7300 mm): Kreisbogen von LED_TXRX auf F.Silkscreen
+    @(179.8900 mm, 81.6500 mm): Rechteck von J_AF auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(103.6521 mm, 34.5200 mm): Abschnitt von U1 auf F.Silkscreen
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(104.7800 mm, 33.2200 mm): Abschnitt von U1 auf F.Silkscreen
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(104.7800 mm, 34.0400 mm): Abschnitt von U1 auf F.Silkscreen
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+    @(104.9900 mm, 34.0400 mm): Abschnitt von U1 auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(104.6550 mm, 34.5200 mm): Abschnitt von U1 auf F.Silkscreen
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(100.0000 mm, 34.0000 mm): Platinen-Text "U1 Pico H socket" auf F.Silkscreen
+    @(101.3800 mm, 34.5200 mm): Abschnitt von U1 auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(165.0800 mm, 25.6300 mm): Referenzfeld von R_LED1
+    @(160.3600 mm, 22.5300 mm): Rechteck von D_OR2 auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(178.0000 mm, 26.7300 mm): Kreisbogen von LED_PWR auf F.Silkscreen
+    @(175.0400 mm, 26.7300 mm): Referenzfeld von LED_PWR
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(175.0400 mm, 26.7300 mm): Referenzfeld von LED_PWR
+    @(178.0000 mm, 26.7300 mm): Kreisbogen von LED_PWR auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(175.0400 mm, 38.7300 mm): Referenzfeld von LED_PTT
+    @(178.0000 mm, 38.7300 mm): Kreisbogen von LED_PTT auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(175.0400 mm, 38.7300 mm): Referenzfeld von LED_PTT
+    @(178.0000 mm, 38.7300 mm): Kreisbogen von LED_PTT auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(175.0400 mm, 50.7300 mm): Referenzfeld von LED_DCD
+    @(178.0000 mm, 50.7300 mm): Kreisbogen von LED_DCD auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(175.0400 mm, 50.7300 mm): Referenzfeld von LED_DCD
+    @(178.0000 mm, 50.7300 mm): Kreisbogen von LED_DCD auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(175.0400 mm, 62.7300 mm): Referenzfeld von LED_TXRX
+    @(178.0000 mm, 62.7300 mm): Kreisbogen von LED_TXRX auf F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(175.0400 mm, 62.7300 mm): Referenzfeld von LED_TXRX
+    @(178.0000 mm, 62.7300 mm): Kreisbogen von LED_TXRX auf F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(48.0000 mm, 28.0000 mm): Platinen-Text "to Pico Micro-USB cable" auf F.Silkscreen
+    @(48.0000 mm, 27.0800 mm): Durchsteckpad 3 [USB_DP] von J_USB_PICO
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.0400 mm, 68.0000 mm): Abschnitt von R_TXR2 auf F.Silkscreen
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.8100 mm, 66.6300 mm): Rechteck von R_TXR2 auf F.Silkscreen
+    @(29.6200 mm, 67.2400 mm): Durchsteckpad 10 [CDL] von SKT_MODEM
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.8100 mm, 66.6300 mm): Rechteck von R_TXR2 auf F.Silkscreen
+    @(29.6200 mm, 69.7800 mm): Durchsteckpad 9 [GND] von SKT_MODEM
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.4600 mm, 71.1100 mm): Abschnitt von SKT_MODEM auf F.Silkscreen
+    @(28.0000 mm, 68.0000 mm): Durchsteckpad 1 [TXR2_N] von R_TXR2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.0000 mm, 76.0000 mm): Platinen-Text "confirm datasheet" auf F.Silkscreen
+    @(22.0000 mm, 76.0000 mm): Durchsteckpad 1 [+5V_OR] von C_BYP1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(28.0000 mm, 76.0000 mm): Platinen-Text "confirm datasheet" auf F.Silkscreen
+    @(27.0000 mm, 76.0000 mm): Durchsteckpad 2 [GND] von C_BYP1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(182.0000 mm, 66.0000 mm): Platinen-Text "GND" auf F.Silkscreen
+    @(182.0000 mm, 67.8400 mm): Durchsteckpad 3 [PTT_OC] von J_AF
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(182.0000 mm, 74.0000 mm): Platinen-Text "PTT" auf F.Silkscreen
+    @(182.0000 mm, 72.9200 mm): Durchsteckpad 2 [AF_RX] von J_AF
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 62.7300 mm): Referenzfeld von LED_TXRX
+    @(178.0000 mm, 64.0000 mm): Durchsteckpad 1 [GND] von LED_TXRX
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 62.7300 mm): Referenzfeld von LED_TXRX
+    @(178.0000 mm, 61.4600 mm): Durchsteckpad 2 [LED_TXRX_A] von LED_TXRX
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 26.7300 mm): Referenzfeld von LED_PWR
+    @(178.0000 mm, 28.0000 mm): Durchsteckpad 1 [GND] von LED_PWR
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 26.7300 mm): Referenzfeld von LED_PWR
+    @(178.0000 mm, 25.4600 mm): Durchsteckpad 2 [LED_PWR_A] von LED_PWR
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 38.7300 mm): Referenzfeld von LED_PTT
+    @(178.0000 mm, 37.4600 mm): Durchsteckpad 2 [LED_PTT_A] von LED_PTT
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 38.7300 mm): Referenzfeld von LED_PTT
+    @(178.0000 mm, 40.0000 mm): Durchsteckpad 1 [GND] von LED_PTT
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 50.7300 mm): Referenzfeld von LED_DCD
+    @(178.0000 mm, 52.0000 mm): Durchsteckpad 1 [GND] von LED_DCD
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(175.0400 mm, 50.7300 mm): Referenzfeld von LED_DCD
+    @(178.0000 mm, 49.4600 mm): Durchsteckpad 2 [LED_DCD_A] von LED_DCD
+
+** Found 6 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(52.1600 mm, 54.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(53.0000 mm, 34.0000 mm): Durchsteckpad 2 [GND] von C_Y2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(52.1600 mm, 62.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(52.1600 mm, 54.0000 mm): Via [GND] auf F.Cu - B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(52.1600 mm, 62.0000 mm): Via [GND] auf F.Cu - B.Cu
+    @(52.9200 mm, 80.0000 mm): Durchsteckpad 3 [GND] von RV1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(53.0000 mm, 34.0000 mm): Durchsteckpad 2 [GND] von C_Y2
+    @(48.0000 mm, 29.6200 mm): Via [GND] auf F.Cu - B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(1.0000 mm, 1.0000 mm): Zone [GND] auf B.Cu, Priorität 1
+    @(1.0000 mm, 1.0000 mm): Zone [GND] auf B.Cu, Priorität 1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.0000 mm, 41.0800 mm): Durchsteckpad 3 [GND] von U1
+    @(87.0000 mm, 30.0000 mm): Via [GND] auf F.Cu - B.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
