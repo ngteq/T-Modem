@@ -1,0 +1,46 @@
+# Local / secrets (never commit live values)
+local/*
+!local/README.md
+
+# Editor / OS
+*~
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+*.code-workspace
+
+# Build / firmware artifacts
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+build/
+dist/
+out/
+.cache/
+
+# KiCad
+*-backups/
+*.kicad_prl
+fp-info-cache
+*-cache.lib
+*.bak
+\#auto_saved_files\#
+_autosave-*
+
+# Python / tooling
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+*.log
+
+# KiCad / generator
+*.kicad_pro.lck
+**/__pycache__/
+hardware/kicad/t-modem/*.kicad_prl
