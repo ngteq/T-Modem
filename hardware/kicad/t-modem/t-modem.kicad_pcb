@@ -12226,7 +12226,7 @@
 	(footprint "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "caeac259-181f-4ddf-8ada-90192c56704e")
-		(at 28 68)
+		(at 27.9 68)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R_TXR2"
@@ -15767,7 +15767,7 @@
 		(uuid "f7033680-e93d-464c-92bb-1843651c54a6")
 	)
 	(segment
-		(start 38.16 68)
+		(start 38.06 68)
 		(end 31.195 61.035)
 		(width 0.25)
 		(layer "F.Cu")
@@ -15783,7 +15783,7 @@
 		(uuid "fed61185-e2f8-4a72-81cd-66f2509ed15a")
 	)
 	(segment
-		(start 38.16 68)
+		(start 38.06 68)
 		(end 44.04 62.12)
 		(width 0.25)
 		(layer "F.Cu")
@@ -16351,8 +16351,8 @@
 		(uuid "c5529bc7-4e1d-49f1-b2cb-54208bd5f245")
 	)
 	(segment
-		(start 28 62.16)
-		(end 28 68)
+		(start 27.9 62.16)
+		(end 27.9 68)
 		(width 0.35)
 		(layer "F.Cu")
 		(net "TXR2_N")
@@ -16360,7 +16360,7 @@
 	)
 	(segment
 		(start 29.62 62.16)
-		(end 28 62.16)
+		(end 27.9 62.16)
 		(width 0.35)
 		(layer "F.Cu")
 		(net "TXR2_N")
@@ -17224,23 +17224,23 @@
 	)
 	(segment
 		(start 183.92 65.27)
-		(end 184.15 65.5)
+		(end 183.8 65.5)
 		(width 0.35)
 		(layer "F.Cu")
 		(net "LED_TXRX_N")
 		(uuid "1bf9e2e3-ecc7-4853-8b1e-23d597a65c48")
 	)
 	(segment
-		(start 184.15 65.5)
-		(end 184.15 80.01)
+		(start 183.8 65.5)
+		(end 183.8 80.25)
 		(width 0.35)
 		(layer "F.Cu")
 		(net "LED_TXRX_N")
 		(uuid "1e83c198-6d63-460b-8470-7aed7e916b6c")
 	)
 	(segment
-		(start 184.15 80.01)
-		(end 159 80.01)
+		(start 183.8 80.25)
+		(end 159 80.25)
 		(width 0.35)
 		(layer "F.Cu")
 		(net "LED_TXRX_N")
@@ -17263,7 +17263,7 @@
 		(uuid "5f708f80-c1b1-4543-be97-dbdd31a9ccf4")
 	)
 	(segment
-		(start 159 80.01)
+		(start 159 80.25)
 		(end 159 83.57)
 		(width 0.35)
 		(layer "F.Cu")
