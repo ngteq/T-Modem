@@ -44,3 +44,7 @@ venv/
 *.kicad_pro.lck
 **/__pycache__/
 hardware/kicad/t-modem/*.kicad_prl
+
+# KiCad local UI
+.history/
+~*.lck
