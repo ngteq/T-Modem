@@ -8,7 +8,6 @@ Open **`t-modem.kicad_pro`** in **KiCad ≥ 8** (tested with **KiCad 10**).
 | `t-modem.kicad_sch` | Schematic + embedded symbols |
 | `t-modem.kicad_sym` | Custom TCM3105 + Pico subset |
 | `t-modem.kicad_pcb` | **190×110 mm** board — copper DRC short/unconn/cross **0/0/0** (prototype-ready) |
-| `scripts/generate_board.py` | Pure-Python regenerator (**no** `pcbnew`) — do **not** overwrite the routed board blindly |
 | `sym-lib-table` | Points at `t-modem.kicad_sym` |
 
 ## Operator steps
