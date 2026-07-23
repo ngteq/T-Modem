@@ -14027,7 +14027,7 @@
 		)
 	)
 	(gr_text "T-Modem-c12s24 v0.25 GPLv3/non-profit"
-		(at 95 2.5 0)
+		(at 35.5 105 0)
 		(layer "F.SilkS")
 		(uuid "9cdeacc0-31ec-43d1-8692-edd16b71a2f1")
 		(effects
