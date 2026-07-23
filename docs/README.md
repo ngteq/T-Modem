@@ -15,7 +15,7 @@ Glossary of uncommon technical terms (repo **`main`** only): [`../docs/TERMS.md`
 | [SCHEMATIC.md](SCHEMATIC.md) | Fabricable netlist + power rationale |
 | [PCB-ASSEMBLY.md](PCB-ASSEMBLY.md) | PCB outline + hobby assembly |
 | [PCB-LAYOUT.md](PCB-LAYOUT.md) | Safe · stable · performant · KISS; prefer larger |
-| [images/explode/](images/explode/) | Sketch explode drawings (5 PNGs) |
+| [images/explode/](images/explode/) | KiCad-based explode teaching set (10 PNGs) |
 | [OVERVIEW.md](OVERVIEW.md) | Product identity, layer split |
 | [HARDWARE-INTENT.md](HARDWARE-INTENT.md) | Form factor, USB/PSU, radio intent |
 

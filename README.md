@@ -1,7 +1,7 @@
 # T-Modem > USB-5V|12-Volt Terminal-Modem Reference
 **Non-Profit for the Radio-World and easy to deploy/repair is parted by AI-Services**<br>
 <br><br>
-![T-Modem-c12s24 complete board sketch](t-modem-c12s24-complete.png)
+![T-Modem-c12s24 complete board (from KiCad PCB)](t-modem-c12s24-complete.png)
 
 
 <br>
@@ -93,7 +93,7 @@ Assembly and cheap-part notes: [docs/PCB-ASSEMBLY.md](docs/PCB-ASSEMBLY.md) · [
 | Step | v0.25 status |
 |------|----------------|
 | Schematic / netlist | **Documented** — [docs/SCHEMATIC.md](docs/SCHEMATIC.md) |
-| KiCad project | **Present** — [hardware/kicad/t-modem/](hardware/kicad/t-modem/) (KiCad ≥8; regenerate via `scripts/generate_board.py`) |
+| KiCad project | **Present** — [hardware/kicad/t-modem/](hardware/kicad/t-modem/) (KiCad ≥8; docs images via `scripts/render_docs_images.py`) |
 | PCB outline / placement | **Documented** — [docs/PCB-ASSEMBLY.md](docs/PCB-ASSEMBLY.md) · [docs/PCB-LAYOUT.md](docs/PCB-LAYOUT.md) |
 | BOM | **Candidates** — [docs/BOM.md](docs/BOM.md) · [hardware/bom/BOM.csv](hardware/bom/BOM.csv) |
 | Verification | [docs/v0.25-VERIFICATION.md](docs/v0.25-VERIFICATION.md) |
