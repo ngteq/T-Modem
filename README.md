@@ -1,7 +1,7 @@
 # T-Modem > USB-5V|12-Volt Terminal-Modem Reference
 **Non-Profit for the Radio-World and easy to deploy/repair is parted by AI-Services**<br>
 <br><br>
-![T-Modem-c12s24 complete board (from KiCad PCB)](t-modem-c12s24-complete.png)
+![T-Modem-c12s24 complete assembled board (KiCad 3D, Pico seated)](t-modem-c12s24-complete.png)
 
 
 <br>

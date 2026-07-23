@@ -1,16 +1,26 @@
 #!/usr/bin/env python3
-"""Render T-Modem docs images from the gold KiCad PCB (2D top/bottom + teaching explode).
-
-Requires: kicad-cli, PyGObject (Rsvg), cairo, Pillow.
+"""Render T-Modem docs images from the gold KiCad PCB.
 
 Outputs:
   <repo>/t-modem-c12s24-complete.png
-  <repo>/docs/images/explode/t-modem-explode-0N-*.png  (10 panels)
+      Assembled 3D (kicad-cli pcb render) — Pico H seated, top view, USB/DC at bottom.
+  <repo>/docs/images/explode/t-modem-explode-0N-*.png
+      Teaching explode panels from 2D SVG layers (not 3D).
+
+Requires: kicad-cli, kicad-packages3d (KICAD10_3DMODEL_DIR), PyGObject (Rsvg),
+cairo, Pillow.
+
+Usage:
+  python3 render_docs_images.py              # complete 3D only (default)
+  python3 render_docs_images.py --explode    # teaching set only
+  python3 render_docs_images.py --all        # both
 """
 
 from __future__ import annotations
 
+import argparse
 import math
+import os
 import subprocess
 import tempfile
 from pathlib import Path
@@ -31,6 +41,8 @@ BOARD_W_MM = 190.0
 BOARD_H_MM = 110.0
 # Builder-facing: front (USB/DC, KiCad Y≈0) at bottom of image — matches docs ASCII.
 FLIP_Y = True
+
+DEFAULT_3DMODEL_DIR = "/usr/share/kicad/3dmodels"
 
 # Footprint centres from gold PCB (mm, KiCad coords).
 POS = {
@@ -96,6 +108,146 @@ def mm_to_xy(x_mm: float, y_mm: float, ox: float, oy: float, scale: float) -> tu
     return ox + x_mm * scale, oy + y * scale
 
 
+def model_dir() -> str:
+    return os.environ.get("KICAD10_3DMODEL_DIR", DEFAULT_3DMODEL_DIR)
+
+
+def pcb_for_complete_render(tmp: Path) -> Path:
+    """Copy gold PCB and seat a DIP-16 body in SKT_MODEM for the built look."""
+    text = PCB.read_text(encoding="utf-8")
+    needle = (
+        '\t\t(model "${KICAD10_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-16_W7.62mm_Socket.step"\n'
+        "\t\t\t(offset\n"
+        "\t\t\t\t(xyz 0 0 0)\n"
+        "\t\t\t)\n"
+        "\t\t\t(scale\n"
+        "\t\t\t\t(xyz 1 1 1)\n"
+        "\t\t\t)\n"
+        "\t\t\t(rotate\n"
+        "\t\t\t\t(xyz 0 0 0)\n"
+        "\t\t\t)\n"
+        "\t\t)"
+    )
+    insert = (
+        needle
+        + "\n"
+        + '\t\t(model "${KICAD10_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-16_W7.62mm.step"\n'
+        "\t\t\t(offset\n"
+        "\t\t\t\t(xyz 0 0 4.5)\n"
+        "\t\t\t)\n"
+        "\t\t\t(scale\n"
+        "\t\t\t\t(xyz 1 1 1)\n"
+        "\t\t\t)\n"
+        "\t\t\t(rotate\n"
+        "\t\t\t\t(xyz 0 0 0)\n"
+        "\t\t\t)\n"
+        "\t\t)"
+    )
+    if needle not in text:
+        raise SystemExit("SKT_MODEM socket 3D model block not found in gold PCB")
+    out = tmp / "t-modem-complete-render.kicad_pcb"
+    out.write_text(text.replace(needle, insert, 1), encoding="utf-8")
+    return out
+
+
+def render_complete_3d() -> Image.Image:
+    """Raytraced assembled top view; rotate 180° so front edge is at image bottom."""
+    md = model_dir()
+    pico = Path(md) / "Module.3dshapes/RaspberryPi_Pico_H.step"
+    if not pico.is_file():
+        raise SystemExit(
+            f"missing Pico 3D model: {pico}\n"
+            "Install kicad-packages3d or set KICAD10_3DMODEL_DIR."
+        )
+    with tempfile.TemporaryDirectory(prefix="tmodem-complete-3d-") as td:
+        tmp = Path(td)
+        pcb = pcb_for_complete_render(tmp)
+        raw = tmp / "raw.png"
+        env = os.environ.copy()
+        env["KICAD10_3DMODEL_DIR"] = md
+        cmd = [
+            "kicad-cli",
+            "pcb",
+            "render",
+            "-o",
+            str(raw),
+            "-w",
+            "1920",
+            "-h",
+            "1280",
+            "--side",
+            "top",
+            "--background",
+            "opaque",
+            "--quality",
+            "high",
+            "--floor",
+            "--zoom",
+            "0.92",
+            "--rotate",
+            "0,0,180",
+            "--define-var",
+            f"KICAD10_3DMODEL_DIR={md}",
+            str(pcb),
+        ]
+        subprocess.run(cmd, check=True, env=env)
+        return Image.open(raw).convert("RGB")
+
+
+def compose_complete(raw: Image.Image) -> Image.Image:
+    """Title + crop → 1536×1024 README companion (matches prior complete size)."""
+    pixels = raw.load()
+    w, h = raw.size
+    xs: list[int] = []
+    ys: list[int] = []
+    for y in range(0, h, 2):
+        for x in range(0, w, 2):
+            r, g, b = pixels[x, y]
+            if not (r > 175 and g > 175 and b > 185 and abs(r - g) < 25 and abs(g - b) < 30):
+                xs.append(x)
+                ys.append(y)
+    if xs and ys:
+        pad = 40
+        box = (
+            max(0, min(xs) - pad),
+            max(0, min(ys) - pad),
+            min(w, max(xs) + pad),
+            min(h, max(ys) + pad),
+        )
+        cropped = raw.crop(box)
+    else:
+        cropped = raw
+
+    W, H = 1536, 1024
+    canvas = Image.new("RGB", (W, H), (250, 250, 248))
+    title_h = 110
+    avail_w, avail_h = W - 80, H - title_h - 50
+    cw, ch = cropped.size
+    scale = min(avail_w / cw, avail_h / ch)
+    nw, nh = int(cw * scale), int(ch * scale)
+    board = cropped.resize((nw, nh), Image.Resampling.LANCZOS)
+    ox = (W - nw) // 2
+    oy = title_h + (avail_h - nh) // 2
+    canvas.paste(board, (ox, oy))
+
+    draw = ImageDraw.Draw(canvas)
+    lines = (
+        ("T-Modem-c12s24", find_font(36), 22, (20, 20, 20)),
+        ("chip 1200 · software 2400", find_font(20), 64, (55, 55, 55)),
+        ("GPLv3 · AS-IS · assembled 3D from gold PCB", find_font(16), 90, (90, 90, 90)),
+    )
+    for text, font, y, fill in lines:
+        bbox = draw.textbbox((0, 0), text, font=font)
+        tw = bbox[2] - bbox[0]
+        draw.text(((W - tw) // 2, y), text, fill=fill, font=font)
+
+    note = "Front edge (USB / DC / BOOTSEL) at bottom · Pico H seated · 190×110 mm · v0.25"
+    fn = find_font(13)
+    bbox = draw.textbbox((0, 0), note, font=fn)
+    draw.text(((W - (bbox[2] - bbox[0])) // 2, H - 32), note, fill=(100, 100, 100), font=fn)
+    return canvas
+
+
 def export_svgs(tmp: Path) -> tuple[Path, Path]:
     top = tmp / "top.svg"
     bot = tmp / "bottom.svg"
@@ -142,7 +294,6 @@ def svg_to_png(svg: Path, scale_px_per_mm: float) -> Image.Image:
     vp.height = BOARD_H_MM
     handle.render_document(ctx, vp)
     buf = surf.get_data()
-    # Cairo ARGB32 little-endian → BGRA
     im = Image.frombuffer("RGBA", (w, h), bytes(buf), "raw", "BGRA", 0, 1).convert("RGB")
     if FLIP_Y:
         im = im.transpose(Image.FLIP_TOP_BOTTOM)
@@ -220,7 +371,6 @@ def draw_callout(
     else:
         tx, ty = px + 8, py + 18
         draw.line([(px, py), (px, py + 14), (tx, ty)], fill=color, width=2)
-    # background pill
     bbox = draw.textbbox((tx, ty), label, font=font)
     pad = 4
     draw.rectangle(
@@ -252,63 +402,6 @@ def dim_except_boxes(
     return out
 
 
-def make_complete(top_board: Image.Image, bottom_board: Image.Image) -> Image.Image:
-    W, H = 1600, 1180
-    canvas = Image.new("RGB", (W, H), (248, 248, 246))
-    draw = ImageDraw.Draw(canvas)
-    draw_title(
-        draw,
-        "T-Modem-c12s24 — complete board (from KiCad PCB)",
-        "chip 1200 · software 2400 · v0.25 · GPLv3 · AS-IS · standard reference",
-        W,
-    )
-
-    # Top view (large)
-    top_area_h = 720
-    scale = min((W - 80) / BOARD_W_MM, (top_area_h - 40) / BOARD_H_MM)
-    tw, th = int(BOARD_W_MM * scale), int(BOARD_H_MM * scale)
-    top_r = top_board.resize((tw, th), Image.Resampling.LANCZOS)
-    ox = (W - tw) // 2
-    oy = 88
-    canvas.paste(top_r, (ox, oy))
-    draw = ImageDraw.Draw(canvas)
-    draw.rectangle([ox - 1, oy - 1, ox + tw + 1, oy + th + 1], outline=(60, 60, 60), width=2)
-
-    callouts = [
-        ("U1", "U1 Pico H (socket)", "right"),
-        ("SKT_MODEM", "SKT_MODEM / TCM3105", "left"),
-        ("Y1", "Y1 4.433619 MHz", "up"),
-        ("J_AF", "J_AF radio AF/PTT", "left"),
-        ("J_USB", "J_USB USB-A Path B", "down"),
-        ("J_DC", "J_DC 12 V CENTRE+", "down"),
-        ("J_LCD_I2C", "J_LCD_I2C + U_LVL", "up"),
-        ("U_REG", "U_REG MP1584 + F1", "up"),
-        ("LED_PWR", "LEDs PWR/PTT/DCD/TXRX", "left"),
-        ("RV1", "RV1 TX · RV_CDL", "right"),
-    ]
-    for ref, label, side in callouts:
-        x, y = POS[ref]
-        draw_callout(draw, ox, oy, scale, x, y, label, side=side)
-
-    # Bottom strip
-    bot_scale = min(520 / BOARD_W_MM, 220 / BOARD_H_MM)
-    bw, bh = int(BOARD_W_MM * bot_scale), int(BOARD_H_MM * bot_scale)
-    bot_r = bottom_board.resize((bw, bh), Image.Resampling.LANCZOS)
-    bx, by = 40, H - bh - 48
-    canvas.paste(bot_r, (bx, by))
-    draw.rectangle([bx - 1, by - 1, bx + bw + 1, by + bh + 1], outline=(60, 60, 60), width=1)
-    font = find_font(14)
-    draw.text((bx, by - 22), "Bottom (B.Cu / silk, mirrored)", fill=(40, 40, 40), font=font)
-
-    note = (
-        "Top view: front edge (USB / DC / BOOTSEL) at bottom of image · "
-        "190×110 mm · gold: hardware/kicad/t-modem/t-modem.kicad_pcb"
-    )
-    draw.text((40, H - 28), note, fill=(90, 90, 90), font=find_font(13))
-    draw.text((W - 280, H - 28), "https://github.com/ngteq/T-Modem", fill=(90, 90, 90), font=find_font(13))
-    return canvas
-
-
 def make_panel(
     board: Image.Image,
     step: int,
@@ -322,9 +415,9 @@ def make_panel(
     base, ox, oy, scale = board_canvas(board, W, H, margin=56, title_h=78)
     boxes = [BOX[k] for k in highlight if k in BOX]
     if boxes:
-        base = dim_except_boxes(base, ox, oy, scale, boxes, dim=0.42)
+        base = dim_except_boxes(base, ox, oy, scale, boxes)
     draw = ImageDraw.Draw(base)
-    draw_title(draw, f"{step:02d} · {title}", subtitle, W)
+    draw_title(draw, f"{step}/10 · {title}", subtitle, W)
     for key in highlight:
         if key in BOX:
             cx, cy, bw, bh = BOX[key]
@@ -339,22 +432,19 @@ def make_panel(
     return base
 
 
-def main() -> None:
-    if not PCB.is_file():
-        raise SystemExit(f"missing PCB: {PCB}")
-    OUT_EXPLODE.mkdir(parents=True, exist_ok=True)
-
-    with tempfile.TemporaryDirectory(prefix="tmodem-render-") as td:
-        tmp = Path(td)
-        top_svg, bot_svg = export_svgs(tmp)
-        top = svg_to_png(top_svg, scale_px_per_mm=14.0)
-        bot = svg_to_png(bot_svg, scale_px_per_mm=14.0)
-        # keep raw exports for debugging (optional copy)
-        (tmp / "keep").mkdir(exist_ok=True)
-
-    complete = make_complete(top, bot)
+def write_complete() -> None:
+    raw = render_complete_3d()
+    complete = compose_complete(raw)
     complete.save(OUT_COMPLETE, "PNG", optimize=True)
     print(f"wrote {OUT_COMPLETE}")
+
+
+def write_explode() -> None:
+    OUT_EXPLODE.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix="tmodem-render-") as td:
+        tmp = Path(td)
+        top_svg, _bot_svg = export_svgs(tmp)
+        top = svg_to_png(top_svg, scale_px_per_mm=14.0)
 
     panels: list[tuple[str, str, str, list[str], list[tuple[str, str, str]], str]] = [
         (
@@ -477,15 +567,43 @@ def main() -> None:
         ),
     ]
 
-    # Remove old German/sketch explode names if still present
+    expected = {p[0] for p in panels}
+    # Drop only superseded filenames; never wipe the whole dir blindly.
     for old in OUT_EXPLODE.glob("t-modem-explode-*.png"):
-        old.unlink()
+        if old.name not in expected:
+            old.unlink()
 
     for i, (fname, title, sub, hl, calls, foot) in enumerate(panels, start=1):
         img = make_panel(top, i, title, sub, hl, calls, foot)
         path = OUT_EXPLODE / fname
         img.save(path, "PNG", optimize=True)
         print(f"wrote {path}")
+
+
+def main() -> None:
+    if not PCB.is_file():
+        raise SystemExit(f"missing PCB: {PCB}")
+
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "--explode",
+        action="store_true",
+        help="Regenerate 2D teaching explode panels only",
+    )
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="Regenerate complete 3D and explode set",
+    )
+    args = ap.parse_args()
+
+    do_complete = args.all or not args.explode
+    do_explode = args.all or args.explode
+
+    if do_complete:
+        write_complete()
+    if do_explode:
+        write_explode()
 
 
 if __name__ == "__main__":

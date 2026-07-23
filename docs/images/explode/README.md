@@ -5,7 +5,8 @@ Teaching sequence for builders — **2D top view** exported from gold
 
 Front edge (USB / DC / BOOTSEL) is at the **bottom** of each image.
 
-Regenerate: `python3 hardware/kicad/t-modem/scripts/render_docs_images.py`
+Regenerate explode only: `python3 hardware/kicad/t-modem/scripts/render_docs_images.py --explode`  
+Repo-root complete (assembled 3D): default `python3 …/render_docs_images.py` (does not rewrite this set).
 
 | # | File | Topic |
 |---|------|-------|
@@ -20,4 +21,4 @@ Regenerate: `python3 hardware/kicad/t-modem/scripts/render_docs_images.py`
 | 9 | [t-modem-explode-09-power-dc.png](t-modem-explode-09-power-dc.png) | 12 V · buck · OR-ing |
 | 10 | [t-modem-explode-10-complete-stack.png](t-modem-explode-10-complete-stack.png) | Complete stack |
 
-PNG · 1536×1024 · branch **`c12s24`** · companion: repo-root [`t-modem-c12s24-complete.png`](../../../t-modem-c12s24-complete.png).
+PNG · 1536×1024 · branch **`c12s24`** · companion (assembled 3D with Pico): repo-root [`t-modem-c12s24-complete.png`](../../../t-modem-c12s24-complete.png).
