@@ -151,7 +151,7 @@ def pcb_for_complete_render(tmp: Path) -> Path:
 
 
 def render_complete_3d() -> Image.Image:
-    """Raytraced assembled top view; rotate 180° so front edge is at image bottom."""
+    """Raytraced assembled top view; yaw 0 so silkscreen reads upright (front edge at top)."""
     md = model_dir()
     pico = Path(md) / "Module.3dshapes/RaspberryPi_Pico_H.step"
     if not pico.is_file():
@@ -185,7 +185,7 @@ def render_complete_3d() -> Image.Image:
             "--zoom",
             "0.92",
             "--rotate",
-            "0,0,180",
+            "0,0,0",
             "--define-var",
             f"KICAD10_3DMODEL_DIR={md}",
             str(pcb),
@@ -241,7 +241,7 @@ def compose_complete(raw: Image.Image) -> Image.Image:
         tw = bbox[2] - bbox[0]
         draw.text(((W - tw) // 2, y), text, fill=fill, font=font)
 
-    note = "Front edge (USB / DC / BOOTSEL) at bottom · Pico H seated · 190×110 mm · v0.25"
+    note = "Front edge (USB / DC / BOOTSEL) at top · Pico H seated · 190×110 mm · v0.25"
     fn = find_font(13)
     bbox = draw.textbbox((0, 0), note, font=fn)
     draw.text(((W - (bbox[2] - bbox[0])) // 2, H - 32), note, fill=(100, 100, 100), font=fn)
